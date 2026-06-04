@@ -74,11 +74,10 @@ img {
   list-style: none;
   padding: 0;
   margin: 12px 0 0;
-  text-align: center;
-}
-
-#site-header nav li {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
 }
 
 #site-header nav a {
