@@ -257,7 +257,13 @@ h3 {
   position: relative;
   padding: 12px;
   border-radius: 4px;
-  margin-bottom: 12px;
+  flex: 1 1 260px; /* 3 card per riga con gap, ma flessibili su mobile */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .project:nth-of-type(odd) {
@@ -354,7 +360,9 @@ button:hover {
 #site-footer {
   background-color: hsl(220, 40%, 15%);
   color: #ffffff;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   font-size: 0.9rem;
   line-height: 2;
   padding: 20px 16px;
